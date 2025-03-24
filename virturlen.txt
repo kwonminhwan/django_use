@@ -1,0 +1,25 @@
+python -m venv venv # 가상환경 생성 명령어 이름을 바꿀수 있지만 굳이 바꾸지 않는게 원칙
+
+source venv/Scripts/actvate # 가상환경 실행
+source venv/bin /activate # 리눅스 맥
+
+deactivate #가상환경 오프
+
+pip freeze # 패키지 리스트 텍스트화
+
+pip freeze > requriment.txt # 텍스트 파일 저장
+
+pip install -r requriment.txt # -r읽기모드 필요한 패키지 파일 설치
+
+가상환경은 활성화 및 비활성화
+.gitignore 파일에 작성되어 원격 저장소에 공유 하지 않음
+
+# .gitignore 파일 환경목록에 .venv를 추가함으로 가상환경은 공유 x
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
