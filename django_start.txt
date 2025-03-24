@@ -1,0 +1,39 @@
+1. 가상환경 만들기 
+python -m venv [이름]
+2. activate
+source [경로]/scripts/activate
+3. Django 설치
+pip install django
+4. requirements 파일 생성
+pip freeze > requirements.txt
+pip install -r reqirements.txt
+5. Project 생성
+django-admin startproject [이름]
+6. 앱 생성
+python manage.py startapp [이름]
+7. settings.py 앱 등록 ,
+8. urls.py 들어가서 경로 설정
+9. views.py 에서 함수 정의
+10. templates > 앱이름 > html 문서 만들기
+11. 서버실행 - python manage.py runserver  -> 확인
+
+
+디자인패턴!!!
+개발자들이 자주 사용하는 기능들은 
+많은 시행착오끝에 문제점이 반복적으로 발생한다는 것을 알고
+문제점을 최소화 하기 위해서 자주 사용되는 소프트웨어 구조를
+마치, 건축공법처럼 구조를 일반화 시켜 놓은것을 소프트웨어 디자인패턴 이라고 한다.
+
+
+참고 MTV 패턴이란?
+model : 데이터와 관련된 로직을 관리 (회원가입시 아이디 비번 이메일등 정보를 관리)
+template : 레이아웃 화면구성을 한 후에 응답처리 (랜더링하면 화면에 나오는 부분)
+view :  model과 template 사이에 로직을 처리하여 응답을 반환하는 부분)
+
+
+#SSR(server side rendering)
+server에서 html파일을 만들어서 같이 보내주는거지
+
+#CSR(클라이어트 sid rendering)
+클라이언트에서 html 파일을 만들기 때문에 templates가 필요없음
+
